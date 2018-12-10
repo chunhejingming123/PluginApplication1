@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 
 import java.io.File;
@@ -32,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         PluginManager.getInstance().setContext(this);
+        Log.d("TG","-----------------");
     }
 
     //事件绑定load
